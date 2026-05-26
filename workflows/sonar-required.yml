@@ -1,12 +1,7 @@
 name: SonarQube Scan
 
 on:
-  pull_request:
-    branches:
-      - main
-      - master
-      - production
-      - "release/production" # quotes needed for slash
+  workflow_call:
 
 jobs:
   sonar:
